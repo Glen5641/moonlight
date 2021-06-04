@@ -11,7 +11,8 @@
     top: 25%;
     width: 6%;
     height: 50%;
-    background-color: grey;
+    background-color: white;
+    border: solid black 5px;
     border-radius: 50%;
     transition: all .2s ease-in-out;
 }
