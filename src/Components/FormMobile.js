@@ -49,7 +49,7 @@ export default class FormMobile extends React.Component {
                 <div><span>Company:        </span><input ref={this.companyRef} type="text" id="company" name="company" autoComplete="new-password"></input></div>
                 <div><span>Contact Number: </span><input ref={this.phoneRef} type="text" id="phone" name="phone" autoComplete="new-password"></input></div>
                 <div><span>Contact Email:  </span><input ref={this.emailRef} type="text" id="email" name="email" autoComplete="new-password"></input></div>
-                <div className="myButton" onClick={this.resetInfo}>Reset</div>
+                <div style={{margin: '2vw 0 0 48vw'}} className="myButton" onClick={this.resetInfo}>Reset</div>
                 <div className="myButton" onClick={this.submitInfo}>Submit</div>
             </div>
         );

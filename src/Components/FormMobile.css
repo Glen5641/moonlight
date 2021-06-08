@@ -1,27 +1,26 @@
 .FormMobile {
     position: absolute;
-    left: 43vw;
-    top: 10vh;
-    width: 50vw;
-    height: 80vh;
-    text-align: right;
-    background-color: blue;
+    left: 5vw;
+    top: 20vh;
+    width: 90vw;
+    height: 75vh;
+    text-align: left;
 }
 
 .FormMobile > div {
-    margin: 2vh;
-    font-size: 4vh;
+    font-size: 4vw;
 }
 
 .FormMobile > div > input {
-    margin: 1.5vh;
-    font-size: 4.5vh;
-    width: 60vh;
+    margin: 1vw 0 5vw 2vw;
+    font-size: 4.5vw;
+    width: 80vw;
 }
 
 .FormMobile span {
+    margin: 3vw 0 0 2vw;
 	color: #ddd;
-	font-size: 4vh;
+	font-size: 5vw;
 }
 
 .myButton {
@@ -35,10 +34,10 @@
 	color:#ffffff;
 	font-family:Arial;
 	font-weight:bold;
-	padding:1vh 1.5vw;
+	padding:1vw 1.5vw;
 	text-decoration:none;
 	text-shadow:0px -1px 0px #2b665e;
-    margin: 0;
+    margin-left: 1vh;
 }
 .myButton:hover {
 	background:linear-gradient(to bottom, #6c7c7c 5%, #768d87 100%);
