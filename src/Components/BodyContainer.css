@@ -1,0 +1,33 @@
+.BodyContainer {
+    overflow: hidden;
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+  }
+
+  .BodyContainer .Menu {
+    position: absolute;
+    top: 1vh;
+    left: 95vw;
+    width: 3vw;
+    height: 3vh;
+  }
+
+  .BodyContainer .Company {
+    position: absolute;
+    left: 11vw;
+    top: 13vh;
+    font-size: 5vw;
+    width: 30vw;
+    font-family: 'Brush Script MT', cursive;
+    color: #bbb;
+  }
+  
+  .BodyContainer .logo {
+    position: absolute;
+    top: 10vh;
+    left: 10vw;
+    width: 6%;
+    height: 10%;
+  }

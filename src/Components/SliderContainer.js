@@ -15,8 +15,8 @@ export default class SliderContainer extends React.Component {
         this.decrementClicked = this.decrementClicked.bind(this);
     }
 
-    incrementClicked() { this.setState((prev) => ({index: prev.index + 1 >= prev.length ? 0 : prev.index + 1, prev: prev.index != undefined ? prev.index : 0})); }
-    decrementClicked() { this.setState((prev) => ({index: prev.index - 1 < 0 ? prev.length : prev.index - 1, prev: prev.index != undefined ? prev.index : 0})); }
+    incrementClicked() { this.setState((prev) => ({index: prev.index + 1 >= prev.length ? 0 : prev.index + 1, prev: (prev.index !== undefined && prev.index !== null) ? prev.index : 0})); }
+    decrementClicked() { this.setState((prev) => ({index: prev.index - 1 < 0 ? prev.length : prev.index - 1, prev: (prev.index !== undefined && prev.index !== null) ? prev.index : 0})); }
 
     render() {
         return (
