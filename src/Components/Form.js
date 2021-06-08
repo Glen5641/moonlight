@@ -1,5 +1,8 @@
 import React from 'react';
 import './Form.css';
+import { collection, addDoc } from "firebase/firestore"; 
+import { initializeApp } from "firebase/app";
+import { getFirestore } from "firebase/firestore";
 
 export default class Form extends React.Component {
     
@@ -16,23 +19,28 @@ export default class Form extends React.Component {
     }
 
     submitInfo() {
-        const requestOptions = {
-            method: 'PUT',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ 
-                name: this.nameRef.current.value,
-                company: this.companyRef.current.value,
-                phone: this.phoneRef.current.value,
-                email: this.emailRef.current.value
-            })
-        };
-        fetch('http://104.155.135.135:8080/SetData', requestOptions)
-            .then(response => {
-                if (!response.ok) throw response;
-                console.log('Success')
-            }).catch(err => {
-                console.log('error')
+        try {
+            const firebaseApp = initializeApp({
+              apiKey: 'AIzaSyAlZYCZpX1DyuugnaEJVZiR9g_kHoraok0',
+              authDomain: 'moonlight-6fa92.firebaseapp.com',
+              projectId: 'moonlight-6fa92'
             });
+          } catch (error) {
+            console.log("db already initialized.");
+          }
+          
+          const db = getFirestore();
+        try {
+          const docRef = addDoc(collection(db, "moonlight"), {
+            name: this.nameRef.current.value,
+            company: this.companyRef.current.value,
+            phone: this.phoneRef.current.value,
+            email: this.emailRef.current.value
+          });
+          console.log("Document written with ID: ", docRef.id);
+        } catch (e) {
+          console.error("Error adding document: ", e);
+        }
     }
 
     resetInfo() {
