@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/moonlight/static/css/main.cab58b82.chunk.css",
-    "main.js": "/moonlight/static/js/main.d36ba590.chunk.js",
-    "main.js.map": "/moonlight/static/js/main.d36ba590.chunk.js.map",
+    "main.css": "/moonlight/static/css/main.53944aca.chunk.css",
+    "main.js": "/moonlight/static/js/main.303338db.chunk.js",
+    "main.js.map": "/moonlight/static/js/main.303338db.chunk.js.map",
     "runtime-main.js": "/moonlight/static/js/runtime-main.9875afcc.js",
     "runtime-main.js.map": "/moonlight/static/js/runtime-main.9875afcc.js.map",
     "static/js/2.81654bc1.chunk.js": "/moonlight/static/js/2.81654bc1.chunk.js",
     "static/js/2.81654bc1.chunk.js.map": "/moonlight/static/js/2.81654bc1.chunk.js.map",
     "index.html": "/moonlight/index.html",
-    "static/css/main.cab58b82.chunk.css.map": "/moonlight/static/css/main.cab58b82.chunk.css.map",
+    "static/css/main.53944aca.chunk.css.map": "/moonlight/static/css/main.53944aca.chunk.css.map",
     "static/js/2.81654bc1.chunk.js.LICENSE.txt": "/moonlight/static/js/2.81654bc1.chunk.js.LICENSE.txt",
     "static/media/IMG_0511.8af5a7eb.JPG": "/moonlight/static/media/IMG_0511.8af5a7eb.JPG",
     "static/media/IMG_0512.8940dc3e.JPG": "/moonlight/static/media/IMG_0512.8940dc3e.JPG",
@@ -31,7 +31,7 @@
   "entrypoints": [
     "static/js/runtime-main.9875afcc.js",
     "static/js/2.81654bc1.chunk.js",
-    "static/css/main.cab58b82.chunk.css",
-    "static/js/main.d36ba590.chunk.js"
+    "static/css/main.53944aca.chunk.css",
+    "static/js/main.303338db.chunk.js"
   ]
 }
