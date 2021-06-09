@@ -38,6 +38,11 @@ export default class Form extends React.Component {
             email: this.emailRef.current.value
           });
           console.log("Document written with ID: ", docRef.id);
+
+          this.nameRef.current.value = "";
+          this.companyRef.current.value = "";
+          this.phoneRef.current.value = "";
+          this.emailRef.current.value = "";
         } catch (e) {
           console.error("Error adding document: ", e);
         }

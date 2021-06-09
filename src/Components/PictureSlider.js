@@ -38,8 +38,6 @@ export default class PictureSlider extends React.Component {
     }
 
     render() {
-        console.log("index: " + this.props.index + ' , prevIndex: ' + this.props.prev + ' , last: ' + this.pictures.length);
-
         let direction = "";
         if (this.props.prev === undefined && this.props.index === 0) { //First move
             direction = "start";
@@ -52,7 +50,6 @@ export default class PictureSlider extends React.Component {
         } else {
             direction = "left";
         }
-        console.log(direction)
 
         return (
             <div className="PictureSlider">
