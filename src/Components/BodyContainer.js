@@ -18,29 +18,20 @@ export default class BodyContainer extends React.Component {
             return check;
         };
 
-        this.state = {
-            mobile: mobileCheck()
-        };
-
-        this.mobileChange = this.mobileChange.bind(this);
+        this.state = { mobile: mobileCheck() };
     }
 
-    mobileChange() {
-        this.setState((prev) => ({mobile: !prev.mobile}));
-    }
 
     render() {
         return (
             this.state.mobile ? (
                     <div className="BodyContainer">
-                        <div className="Menu"><Menu onClick={this.mobileChange} mobile="Desktop"/></div>
                         <img alt="logo" className="logoMobile" src={logo} />
                         <div className="CompanyMobile">Moonlight Machine LLC.</div>
                         <FormMobile />
                     </div>
                 ):(
                     <div className="BodyContainer">
-                        <div className="Menu"><Menu onClick={this.mobileChange} mobile="Mobile"/></div>
                         <img alt="logo" className="logo" src={logo} />
                         <div className="Company">Moonlight Machine LLC.</div>
                         <Form/>

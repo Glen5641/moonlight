@@ -1,28 +1,13 @@
 import React from 'react';
 import './PictureSlider.css';
-import i1 from '../Pictures/IMG_0511.JPG';
-import i2 from '../Pictures/IMG_0512.JPG';
-import i3 from '../Pictures/IMG_0513.JPG';
-import i4 from '../Pictures/IMG_0515.JPG';
-import i5 from '../Pictures/IMG_0516.JPG';
-import i6 from '../Pictures/IMG_0517.JPG';
-import i7 from '../Pictures/IMG_0518.JPG';
-import i8 from '../Pictures/IMG_0519.JPG';
-import i9 from '../Pictures/IMG_0520.JPG';
-import i10 from '../Pictures/IMG_0521.JPG';
-import i11 from '../Pictures/IMG_0522.JPG';
-import i12 from '../Pictures/IMG_0523.JPG';
-import i13 from '../Pictures/IMG_0524.JPG';
-import i14 from '../Pictures/IMG_0525.JPG';
-import i15 from '../Pictures/IMG_0526.JPG';
-import i16 from '../Pictures/IMG_0529.JPG';
+
 
 export default class PictureSlider extends React.Component {
     
     constructor(props) {
         super(props);
         this.state = { prev: 0 };
-        this.pictures = [i1,i2,i2,i3,i4,i5,i6,i7,i8,i9,i10,i11,i12,i13,i14,i15,i16];
+        this.pictures = this.props.pictures;
     }
 
     componentDidUpdate() {
@@ -53,6 +38,7 @@ export default class PictureSlider extends React.Component {
     }
 
     render() {
+        console.log("index: " + this.props.index + ' , prevIndex: ' + this.props.prev + ' , last: ' + this.pictures.length);
 
         let direction = "";
         if (this.props.prev === undefined && this.props.index === 0) { //First move
@@ -66,6 +52,7 @@ export default class PictureSlider extends React.Component {
         } else {
             direction = "left";
         }
+        console.log(direction)
 
         return (
             <div className="PictureSlider">
