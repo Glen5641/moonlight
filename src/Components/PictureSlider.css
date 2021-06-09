@@ -23,22 +23,22 @@
 
 .slideleftin {
     left: -100px;
-    animation: slideleftin .5s forwards;
+    animation: slideleftin 1s forwards;
 }
 
 .sliderightin {
     left: 100%;
-    animation: sliderightin .5s forwards;
+    animation: sliderightin 1s forwards;
 }
 
 .sliderightout {
     left: 0;
-    animation: sliderightout .5s forwards;
+    animation: sliderightout 1s forwards;
 }
 
 .slideleftout {
     left: 0;
-    animation: slideleftout .5s forwards;
+    animation: slideleftout 1s forwards;
 }
 
 @keyframes slideleftin {
